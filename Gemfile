@@ -4,7 +4,11 @@ gem 'rails'
 
 group :development, :test do
 	gem 'sqlite3'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
 	gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
